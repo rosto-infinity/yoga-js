@@ -86,18 +86,15 @@ const utils ={
               exerciceArray.map((exo) => {
                 if (exo.pic == e.target.id) {
                   exo.min = parseInt(e.target.value);
+                  console.log(exerciceArray);
                 }
               });
-              utils.store(exerciceArray);
             });
           });
     },
     handleEventArrow: function (){},
     reboot: function (){},
-    store: function (data){
-        console.log(data);
-        localStorage.exercices = JSON.stringify(data);
-      },
+    store: function (){},
     
 };
 
